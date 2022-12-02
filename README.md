@@ -45,9 +45,9 @@ A base tratada foi separada de forma aleatória em duas
 * 80% dos dados foram considerados como base de treino 
 * 20% dos dados foram considerados como base de teste
 
-O primeiro modelo testado foi uma árvore de classificação. Pelos outputs é possível ver que apesar da acurácia na base 92%. Contudo ocorreu uma grande quantidade de falsos negativos (clientes que eram considerados pelo modelo como não default, contudo são clientes que retornaram default).
+O primeiro modelo testado foi uma árvore de classificação. Pelos outputs é possível notar que o modelo apresenta uma acurácia de 92.9%. Contudo ocorreu uma grande quantidade de falsos negativos (clientes que eram considerados pelo modelo como `não default`, mas são clientes que retornam `default`).
 
-O segundo modelo foi Random Forest.
+O segundo modelo foi Random Forest retornou uma melhor acurácia de 93.8%.
 
 ## Próximos Passos
 
