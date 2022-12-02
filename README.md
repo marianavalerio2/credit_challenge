@@ -26,13 +26,29 @@ para desenvolver seus códigos. É fundamental que cumpra com esse prazo.
 Mais uma vez obrigado pelo seu tempo, bom desafio e bom trabalho!
 
 ## Dataset
-O dataset está disponível em: 
+O dataset está disponível em: challenge/credit_risk_dataset.csv
 
-A descrição das variáveis está disponível em:
+A descrição das variáveis está disponível em: challenge/variables_def.xlsx
 
 ### Validação dos dados disponíveis
 Foi realizada uma análise incial dos dados que resultou nos principais pontos listados abaixo.
 
+1) que as variáveis abaixo são quantitativas
+
+    * `person_age` - possuí valor máximo de 144 (para elaboração do modelo iremos limitar em 100 anos)
+    * `person_income` - possuí valor máximo de 6.000.000 (para elaboração do modelo iremos limitar em 1.000.000)
+    * `person_emp_length` - 895 casos de missing values. Valor máximo de 123 anos, será desconsiderado da base para gerar o modelo, pois o tempo de empresa não deve ser maior que a idade
+    * `loan_amnt`
+    * `loan_int_rate` - 3116 casos de missing values
+    * `loan_percent_income`
+    * `cb_person_cred_hist_length`
+
+ 2) variáveis qualitativa:
+    * `person_home_ownership` ("MORTGAGE" "OTHER"    "OWN"      "RENT")
+    * `loan_grade` ("A" "B" "C" "D" "E" "F" "G")
+    * `loan_intent` ("DEBTCONSOLIDATION","EDUCATION", "HOMEIMPROVEMENT","MEDICAL","PERSONAL","VENTURE")
+    * `loan_status` (0,1)
+    * `cb_person_default_on_file` ("N" "Y")
 
 Os outliers citados acima foram removidos da base de dados.
 
